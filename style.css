@@ -1,2 +1,75 @@
 p {text-transform: uppercase;
 font-size: medium;}
+
+h1 {
+    text-decoration: underline;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {margin: 0; padding: 0; color: rgb(39, 39, 39); font-family: "roboto", sans-serif;}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.main-nav ul{
+    list-style: none;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.main-nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.hero{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-img img{
+    width: 100%;
+    position: absolute;
+}
+
+.hero-content{
+    position: absolute;
+    width: 1024px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero-title{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: solid 2px #333;
+}
+
+.main-nav ul :hover {
+    font-weight: bold;
+    text-decoration: underline;
+
+}
